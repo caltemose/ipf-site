@@ -1,0 +1,32 @@
+body {
+    margin: 1em;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    background: #eee;
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.0em;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+// testing autoprefixer
+// :fullscreen a {
+//   transition: transform 1s;
+// }

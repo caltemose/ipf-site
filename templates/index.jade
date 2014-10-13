@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  head(data-build-date="#{date}")
+    title= title
+    link(href='/assets/css/main.css', rel='stylesheet')
+
+  body
+    section
+      != contents
+
+    // some comments here
+
+    script(src="/assets/js/index.js")
