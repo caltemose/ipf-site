@@ -13,9 +13,9 @@ Map | Directions | Parking | FAQ
 
 ## Welcome to Atlanta's Best Street Festival
 
-During the last full weekend in April each year, Inman Park proudly presents a neighborhood festival widely regarded as Atlanta’s most spirited and eclectic.
+During the last full weekend in April each year, Inman Park proudly presents a neighborhood festival widely regarded as Atlanta&rsquo;s most spirited and eclectic.
 
-Please join us for the 44th Inman Park Spring Festival and Tour Of Homes. The House Tour Preview will be Friday, April 24 (Noon – 4:00pm), and Festival on April 25 and 26, 2014 (Noon – 6:00pm).
+Please join us for the 44th Inman Park Spring Festival and Tour Of Homes. The House Tour Preview will be Friday, April 24 (Noon - 4pm), and Festival on April 25 and 26, 2014 (Noon - 6pm).
 
 
 
@@ -34,7 +34,7 @@ Please join us for the 44th Inman Park Spring Festival and Tour Of Homes. The Ho
 - no pets
 
 
-### Socializing with IPF
+### Getting Social
 
 - FB
 - Twitter
