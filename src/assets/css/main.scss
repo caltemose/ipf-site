@@ -49,6 +49,10 @@ header a {
     display: inline-block;
     margin-right: 1.25em;
     font-size: 0.75em;
+
+    &.active {
+        text-decoration: none;
+    }
 }
 
 

@@ -1,7 +1,10 @@
 extends templates/layout.jade
 
-block title 
-  title= title
+block pageVars
+    - var selectedNav = 'home'
+
+block title
+    title The #{ipf.date.year} #{ipf.title}
 
 block contents
 

@@ -1,5 +1,6 @@
 doctype html
 html(lang="en")
+    block pageVars
 
     head
 
@@ -15,12 +16,35 @@ html(lang="en")
         
         header
             nav
-                a(href="/index.html") Home
-                a(href="/about/index.html") About
-                a(href="/market/index.html") Market
-                a(href="/events/index.html") Events
-                a(href="/sponsors/index.html") Sponsors
-                a(href="/volunteer/index.html") Volunteer
+                if selectedNav === 'home'
+                    a(href="/index.html" class="active") Home
+                else
+                    a(href="/index.html") Home
+                
+                if selectedNav === 'about'
+                    a(href="/about/index.html" class="active") About
+                else
+                    a(href="/about/index.html") About
+
+                if selectedNav === 'market'
+                    a(href="/market/index.html" class="active") Market
+                else
+                    a(href="/market/index.html") Market
+
+                if selectedNav === 'events'
+                    a(href="/events/index.html" class="active") Events
+                else
+                    a(href="/events/index.html") Events
+
+                if selectedNav === 'sponsors'
+                    a(href="/sponsors/index.html" class="active") Sponsors
+                else 
+                    a(href="/sponsors/index.html") Sponsors
+
+                if selectedNav === 'volunteer'
+                    a(href="/volunteer/index.html" class="active") Volunteer
+                else
+                    a(href="/volunteer/index.html") Volunteer
 
 
         main

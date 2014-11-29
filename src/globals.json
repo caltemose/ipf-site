@@ -1,10 +1,12 @@
 {
-  "title": "Inman Park Festival",
-  "date": {
-    "annual": "44",
-    "year": "2015",
-    "friday": "24th",
-    "saturday": "25th",
-    "sunday": "26th"
-  }
+    "ipf": {
+        "title": "Inman Park Festival",
+        "date": {
+            "annual": "44",
+            "year": "2015",
+            "friday": "24th",
+            "saturday": "25th",
+            "sunday": "26th"
+        }
+    }
 }

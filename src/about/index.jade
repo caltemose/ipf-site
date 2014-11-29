@@ -1,7 +1,10 @@
 extends ../templates/layout.jade
 
+block pageVars
+    - var selectedNav = 'about'
+
 block title
-    title About The #{title}
+    title About The #{ipf.title}
 
 block contents
 

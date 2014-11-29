@@ -1,5 +1,5 @@
 {
-  "name": "IPF Site",
+  "name": "ipf-site",
   "version": "0.0.0",
   "description": "Source files and workflow for inmanparkfestival.org",
   "main": "index.js",

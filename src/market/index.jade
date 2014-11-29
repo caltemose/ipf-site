@@ -1,7 +1,10 @@
 extends ../templates/layout.jade
 
+block pageVars
+    - var selectedNav = 'market'
+
 block title
-    title #{title} | Market
+    title #{ipf.title} | Market
 
 block contents
 

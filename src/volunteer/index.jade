@@ -1,11 +1,14 @@
 extends ../templates/layout.jade
 
+block pageVars
+    - var selectedNav = 'volunteer'
+
 block title
-    title #{title} | Volunteers
+    title #{ipf.title} | Volunteer
 
 block contents
 
-    h1 Volunteers Page
+    h1 Volunteer Page
 
     article
 
