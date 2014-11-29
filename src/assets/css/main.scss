@@ -1,0 +1,68 @@
+$font-size: 16px;
+
+body {
+    margin: 1em;
+    font-family: Arial, sans-serif;
+    font-size: $font-size;
+    background: #fafafa;
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+    max-width: 42em;
+}
+
+
+h1 {
+    font-size: 1.75em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.0em;
+    margin: 1.5em 0 0.75em;
+}
+
+
+
+ul {
+    list-style-type: square;
+    margin: 0.5em 0 1em;
+}
+
+li {
+    margin-bottom: 0.5em;
+    // text-transform: uppercase;
+}
+
+p {
+    line-height: 1.25em;
+}
+
+
+header a {
+    display: inline-block;
+    margin-right: 1.25em;
+    font-size: 0.75em;
+}
+
+
+footer {
+    margin-top: 3em;
+
+    p {
+        font-size: 0.75em;
+        color: #777;
+    }
+}
+
+
+// testing autoprefixer
+// :fullscreen a {
+//     transition: transform 1s;
+// }
