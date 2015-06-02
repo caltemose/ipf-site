@@ -1,0 +1,20 @@
+{
+    "ecmaFeatures": {},
+    "parser": "espree",
+    "env": {
+        "browser": true,
+        "node": false,
+        "amd": false,
+        "mocha": false,
+        "jasmine": false
+    },
+
+    "globals": {
+        "console": true
+    },
+
+    "rules": {
+        "quotes": [2, "single"],
+        "no-console": 1
+    }
+}

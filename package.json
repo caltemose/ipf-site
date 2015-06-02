@@ -17,6 +17,7 @@
     "marked": "~0.3.2",
     "gulp-minify-html": "~0.1.6",
     "gulp-prettify": "~0.3.0",
-    "browser-sync": "~1.7.1"
+    "browser-sync": "~1.7.1",
+    "gulp-eslint": "~0.12.0"
   }
 }
