@@ -16,36 +16,13 @@ html(lang="en")
         
         header
             nav
-                if selectedNav === 'home'
-                    a(href="/index.html" class="active") Home
+              - var navs = [ { name: 'Home', url: '/' }, { name: 'About', url: '/about' }, { name: 'Market', url: '/market' }, { name: 'Events', url: '/events' }, { name: 'Sponsors', url: '/sponsors' }, { name: 'Volunteer', url: '/volunteer' } ]
+              
+              each nav in navs
+                if nav.name.toLowerCase() === selectedNav
+                  a(href=nav.url class="active")= nav.name
                 else
-                    a(href="/index.html") Home
-                
-                if selectedNav === 'about'
-                    a(href="/about/index.html" class="active") About
-                else
-                    a(href="/about/index.html") About
-
-                if selectedNav === 'market'
-                    a(href="/market/index.html" class="active") Market
-                else
-                    a(href="/market/index.html") Market
-
-                if selectedNav === 'events'
-                    a(href="/events/index.html" class="active") Events
-                else
-                    a(href="/events/index.html") Events
-
-                if selectedNav === 'sponsors'
-                    a(href="/sponsors/index.html" class="active") Sponsors
-                else 
-                    a(href="/sponsors/index.html") Sponsors
-
-                if selectedNav === 'volunteer'
-                    a(href="/volunteer/index.html" class="active") Volunteer
-                else
-                    a(href="/volunteer/index.html") Volunteer
-
+                  a(href=nav.url)= nav.name
 
         main
 
