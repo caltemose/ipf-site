@@ -31,8 +31,8 @@ var CONFIG = {
     }
 };
 
-// 
-// ----------- private tasks ----------- 
+//
+// ----------- private tasks -----------
 //
 
 gulp.task('clean', function(cb) {
@@ -81,13 +81,10 @@ gulp.task('browser-sync', function() {
 });
 
 
-// 
-// ----------- public tasks ----------- 
+//
+// ----------- public tasks -----------
 //
 
 gulp.task('default', ['clean'], function() {
     gulp.start('css', 'templates', 'lint', 'watch', 'browser-sync');
 });
-
-
-// gulp.task('default', ['js','css','templates','express','watch']);
