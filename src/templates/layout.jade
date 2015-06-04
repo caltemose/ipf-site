@@ -15,9 +15,7 @@ html(lang="en")
     body
         
         header
-            nav
-              - var navs = [ { name: 'Home', url: '/' }, { name: 'About', url: '/about' }, { name: 'Market', url: '/market' }, { name: 'Events', url: '/events' }, { name: 'Sponsors', url: '/sponsors' }, { name: 'Volunteer', url: '/volunteer' } ]
-              
+            nav              
               each nav in navs
                 if nav.name.toLowerCase() === selectedNav
                   a(href=nav.url class="active")= nav.name
