@@ -8,13 +8,29 @@ block title
 
 block contents
 
-    h1 Volunteer Page
+    .container
+        h1 Festival Thrives on Volunteers
 
     article
 
-        h2 this page
+        section.container
+        
+            p 
+              | This festival runs on volunteers. To sign up to volunteer, please visit 
+              a(href="http://vols.pt/5WUsPh") VolunteerSpot
+              //- force a space after the </a>:
+              = ' '
+              | today to setup an account.
+              
+              // this also works although cumbersome:
+            p This is a #[a(href="http://vols.pt/5WUsPh") link] and something.
+            
+              // the old-fashioned way:
+            p <a href="http://vols.pt/">Direct HTML</a> works too.
 
-        ul
-            li summary text - global rules
-            li rules for beer volunteers
-            li link to new site/web service for volunteering
+            ul
+                li summary text - global rules
+                li rules for beer volunteers
+                li link to new site/web service for volunteering
+        
+        div A div without a container class.

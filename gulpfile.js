@@ -1,4 +1,5 @@
 var gulp = require('gulp')
+    , gutil = require('gulp-util')
     , del = require('del')
     , sass = require('gulp-sass')
     , notify = require('gulp-notify')
@@ -7,8 +8,9 @@ var gulp = require('gulp')
     , prettify = require('gulp-prettify')
     , fs = require('fs')
     , eslint = require('gulp-eslint')
-    , browserSync = require('browser-sync')
-    , reload = browserSync.reload
+    , browserSync = require('browser-sync').create()
+    // , reload = browserSync.reload
+    , rsync = require('gulp-rsync')
     ;
 
 var CONFIG = {
@@ -32,19 +34,25 @@ var CONFIG = {
 };
 
 //
-// ----------- private tasks -----------
+// ----------- tasks -----------
 //
 
 gulp.task('clean', function(cb) {
     del([CONFIG.css.dest, CONFIG.js.dest], cb);
 });
 
+gulp.task('images', function () {
+    gulp.src('src/assets/img/**')
+        .pipe(gulp.dest('build/assets/img'));
+});
+
 gulp.task('css', function() {
     return gulp.src(CONFIG.css.src)
-        .pipe(sass({style:'expanded'}))
+        .pipe(sass({style:'expanded'})
+        .on('error', sass.logError))
         .pipe(gulp.dest(CONFIG.css.dest))
-        .pipe(notify({message:'styles task complete'}))
-        .pipe(reload({stream:true}));
+        .pipe(browserSync.stream())
+        // .pipe(notify({message:'styles task complete'}));
 });
 
 gulp.task('templates', function() {
@@ -53,10 +61,17 @@ gulp.task('templates', function() {
             pretty:true,
             data: JSON.parse( fs.readFileSync(CONFIG.html.globals, { encoding: 'utf8' }) )
         }))
+        .on('error', gutil.log)
         .pipe(prettify({indent_size:4}))
         .pipe(gulp.dest(CONFIG.html.dest))
-        .pipe(notify({message:'templates task complete'}))
-        .pipe(reload({stream:true}));
+        .pipe(browserSync.stream())
+        // .pipe(notify({message:'templates task complete'}));
+        // .pipe(reload({stream:true}));
+});
+
+gulp.task('js', function () {
+    gulp.src('src/assets/js/**')
+        .pipe(gulp.dest('build/assets/js'));
 });
 
 gulp.task('lint', function () {
@@ -72,19 +87,34 @@ gulp.task('watch', function () {
 });
 
 gulp.task('browser-sync', function() {
-    browserSync({
+    browserSync.init({
         server: {
-            baseDir: './build',
-            directory: false
+            baseDir: './build'
         }
     });
 });
 
+gulp.task('deploy', function() {
+    return gulp.src('build/**')
+        .pipe(rsync({
+            root: 'build',
+            hostname: 'ipf.chadzilla.com',
+            destination: '/home/ipfestival/ipf.chadzilla.com/',
+            username: 'ipfestival',
+            progress: true,
+            recursive: true
+    }));
+});
+
 
 //
-// ----------- public tasks -----------
+// ----------- jobs -----------
 //
 
 gulp.task('default', ['clean'], function() {
-    gulp.start('css', 'templates', 'lint', 'watch', 'browser-sync');
+    gulp.start('images', 'css', 'templates', 'js', 'watch', 'browser-sync');
+});
+
+gulp.task('release', ['clean'], function () {
+    gulp.start('images', 'css', 'templates', 'js');
 });

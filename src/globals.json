@@ -9,30 +9,26 @@
             "sunday": "26"
         }
     },
-    "navs": [
+    "nav": [
       {
         "name": "Home",
         "url": "/"
-      },
-      {
+      }, {
         "name": "About",
         "url": "/about"
-      },
-      {
+      }, {
         "name": "Market",
         "url": "/market"
-      },
-      {
+      }, {
         "name": "Events",
         "url": "/events"
-      },
-      {
+      }, {
         "name": "Sponsors",
         "url": "/sponsors"
-      },
-      {
+      }, {
         "name": "Volunteer",
         "url": "/volunteer"
       }
-    ]
+    ],
+    "copyright": "Copyright © Inman Park Festival"
 }

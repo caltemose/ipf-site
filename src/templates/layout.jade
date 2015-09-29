@@ -14,7 +14,7 @@ html(lang="en")
 
     body
         
-        header
+        header.container
             nav              
               each nav in navs
                 if nav.name.toLowerCase() === selectedNav
@@ -27,5 +27,11 @@ html(lang="en")
             block contents
 
 
-        footer
-            p contact | terms | privacy | copyright notice
+        footer.container
+            nav
+                a(href="/contact-us") Contact Us
+                a(href="/terms-of-use") Terms of Use
+                a(href="/privacy-policy") Privacy Policy
+                a(href="/trademark") Trademark Use
+            
+            p.fineprint #{copyright}
