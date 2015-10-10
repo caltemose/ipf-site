@@ -16,11 +16,11 @@ html(lang="en")
         
         header.container
             nav              
-              each nav in navs
-                if nav.name.toLowerCase() === selectedNav
-                  a(href=nav.url class="active")= nav.name
+              each item in nav
+                if item.name.toLowerCase() === selectedNav
+                  a(href=item.url class="active")= item.name
                 else
-                  a(href=nav.url)= nav.name
+                  a(href=item.url)= item.name
 
         main
 

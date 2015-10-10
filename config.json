@@ -1,0 +1,25 @@
+{
+    "images": {
+        "src": "src/assets/img/**",
+        "dest": "build/assets/img"
+    },
+    "css": {
+        "src": "src/assets/css/main.scss",
+        "dest": "build/assets/css"
+    },
+    "html": {
+        "src": "src/**/*.jade",
+        "dest": "build/",
+        "globals": "src/globals.json"
+    },
+    "js": {
+        "src": "src/assets/js/**/*",
+        "dest": "build/assets/js"
+    },
+    "watch": {
+        "images": "src/assets/img/**",
+        "css": "src/assets/css/**/*.scss",
+        "html": "src/**/*.jade",
+        "js": "src/assets/js/**/*.js"
+    }
+}
