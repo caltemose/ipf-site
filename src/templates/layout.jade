@@ -14,24 +14,42 @@ html(lang="en")
 
     body
         
-        header.container
-            nav              
-              each item in nav
-                if item.name.toLowerCase() === selectedNav
-                  a(href=item.url class="active")= item.name
-                else
-                  a(href=item.url)= item.name
+        header
+            .u-container
+                nav.NavPrimary
+                    each item in nav
+                        if item.title.toLowerCase() === selectedNav
+                            a(href=item.href class="PipeNav PipeNav.is-selected")= item.title
+                        else
+                            a(href=item.href class="PipeNav")= item.title
+                
+                nav.NavSecondary
+                    each item in utilities
+                        if item.title.toLowerCase() === selectedNav
+                            a(href=item.href class="PipeNav PipeNav.is-selected")= item.title
+                        else
+                            a(href=item.href class="PipeNav")= item.title
+            
 
         main
 
             block contents
 
 
-        footer.container
-            nav
-                a(href="/contact-us") Contact Us
-                a(href="/terms-of-use") Terms of Use
-                a(href="/privacy-policy") Privacy Policy
-                a(href="/trademark") Trademark Use
+        footer
+            .u-container
             
-            p.fineprint #{copyright}
+                .sponsor-logos
+                    a(href="#") sponsor1
+                    a(href="#") sponsor2
+                    a(href="#") sponsor3
+                    a(href="#") sponsor4
+                    a(href="#") sponsor5
+            
+                nav.NavFooter
+                    a(href="/contact-us" class="PipeNav") Contact Us
+                    a(href="/terms-of-use" class="PipeNav") Terms of Use
+                    a(href="/privacy-policy" class="PipeNav") Privacy Policy
+                    a(href="/trademark" class="PipeNav") Trademark Use
+                
+                p.fineprint #{copyright}

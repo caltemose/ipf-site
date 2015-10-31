@@ -4,42 +4,73 @@ block pageVars
     - var selectedNav = 'about'
 
 block title
-    title About The #{ipf.title}
+    title About the #{ipf.title}
 
 block contents
 
-    h1 About Section
+    .u-container
 
-    article
+        h1 About the Inman Park Festival
 
-        p intro text from /festival-101/
-        
+        article
 
-        h2 this section
+            p Inman Park Spring Festival takes place in one of Atlanta’s oldest and most scenic neighborhoods. First developed in the late 1800s, Inman Park is home to many historic homes and parks. The Festival began in the early 1970s as a means to attract attention to gentrification efforts that sought to revitalize the community.
 
-        ul 
-            li history
-            li faq (update dates)
-            li announcements (news source)
-            li media (1 article), add press kit/info from trademarks page
+            p The festival offers something for everybody. Music, kids activities, a Tour of Homes, a marvelous street parade, an artists’ market, some of the city’s best people-watching. Come early, stay late, and be our guests at Atlanta’s best street festival.
 
 
-        h2 this page
+            h2 Important Festival Details
+            
+            h3 Festival hours are:
 
-        ul
-            li basic info: hours, admission and location
-            li tour of homes summary and hours
-            li bands & entertainment
-            li arts/market
-            li parade
-            li free shuttle?
-            li parking
+            ul
+                li Friday, #{ipf.date.friday.date}: #{ipf.date.friday.hours} (Tour of Homes preview only)
+                li Saturday, #{ipf.date.saturday.date}: #{ipf.date.saturday.hours}
+                li Sunday, #{ipf.date.sunday.date}: #{ipf.date.sunday.hours}
+                
+            p Note that on Friday, no other festival activities will happen other than the Tour preview. 
 
+                
+            h3 Admission
+            
+            p Admission to all Festival events, except the Tour of Homes, is free. Tour of Homes tickets are $#{tour.cost.advance} in advance and $#{tour.cost.door} starting Friday, #{ipf.date.friday.date}.
 
-        h2 notes
-
-        ul
-            li re-evaluate how content is organized in this section, esp index/festival-101/411/faq
-            li map, directions, parking info/links
-            li can history be moved to ipna.org ?
-
+            
+            h3 Arrival
+            
+            p Check out the <a href="/map">Map page</a> for an overview of important festival locations. For information on how to get to festival, see the <a href="/directions">Directions page</a>. <strong>We highly recommend not driving to the neighborhood.</strong>
+            
+            
+            h2 Summary of Activities
+            
+            h3 Tour of Homes
+            
+            p The Tour of Homes is a self-conducted tour of some of the beautiful homes and buildings in Inman Park. See inside some of the glorious old Victorian homes or check out some of the beautiful remodeling jobs neighbors have completed on their houses.
+            
+            p The home preview starts on Friday #{ipf.date.friday.date} between #{ipf.date.friday.hours} and continues through Saturday and Sunday between #{ipf.date.saturday.hours}.
+            
+            p 
+                | To find out more about the Tour of Homes and read about the homes on the tour, visit the
+                = ' ' 
+                a(href="/tour-of-homes") Tour of Homes page.
+            
+            
+            h3 Parade
+            
+            p The Festival Parade is a festival favorite that happens at 2PM on Saturday. Come see some of Atlanta's wild and quirky groups march through the streets of Inman Park. For more information, or to learn about applying to be in the festival parade, <a href="/events/parade">visit the parade page</a>.
+            
+            h3 Music
+            
+            p There are many bands playing a wide variety of music across three stages on Saturday and Sunday. To see which bands are playing and to view the music schedule, check out the <a href="/events/music">music page</a>.
+            
+            
+            h3 Dance Festival
+            
+            p Every year The Trolley Barn hosts a program of classical and contemporary dance. Check out <a href="/events/dance">the dance page</a> to learn more about the dance program. 
+            
+            
+            h3 Arts & Crafts Show and Street Market
+            
+            p Browse many booths on the tree-shaded streets of Inman Park from 11AM to 6PM Saturday and Sunday during festival. The <a href="/market/arts-crafts-market">Arts & Crafts Market</a> is a juried selection of more than 150 artists showcasing their work in a variety of media including sculpture, painting and photography. The <a href="/market/street-market">Street Market</a> includes more than 250 booths of vendors selling antiques, handcrafted wares, clothing and a large variety of other items.
+            
+            

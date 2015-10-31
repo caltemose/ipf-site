@@ -2,33 +2,63 @@
     "ipf": {
         "title": "Inman Park Festival",
         "date": {
-            "annual": "44",
-            "year": "2015",
-            "friday": "24",
-            "saturday": "25",
-            "sunday": "26"
+            "annual": "45",
+            "year": "2016",
+            "friday": {
+                "date": "April 29",
+                "hours": "12PM - 4PM"
+            },
+            "saturday": {
+                "date": "April 30",
+                "hours": "12PM - 6PM"
+            },
+            "sunday": {
+                "date": "May 1",
+                "hours": "12PM - 6PM"
+            }
+        }
+    },
+    "tour": {
+        "cost": {
+            "advance": "15",
+            "door": "20"
         }
     },
     "nav": [
-      {
-        "name": "Home",
-        "url": "/"
-      }, {
-        "name": "About",
-        "url": "/about"
-      }, {
-        "name": "Market",
-        "url": "/market"
-      }, {
-        "name": "Events",
-        "url": "/events"
-      }, {
-        "name": "Sponsors",
-        "url": "/sponsors"
-      }, {
-        "name": "Volunteer",
-        "url": "/volunteer"
-      }
+        {
+            "title": "Home",
+            "href": "/"
+        }, {
+            "title": "About",
+            "href": "/about"
+        }, {
+            "title": "Market",
+            "href": "/market"
+        }, {
+            "title": "Events",
+            "href": "/events"
+        }, {
+            "title": "Sponsors",
+            "href": "/sponsors"
+        }, {
+            "title": "Volunteer",
+            "href": "/volunteer"
+        }
+    ],
+    "utilities": [
+        {
+            "title": "Map",
+            "href": "/map"
+        }, {
+            "title": "Directions",
+            "href": "/directions"
+        }, {
+            "title": "Parking",
+            "href": "/parking"
+        }, {
+            "title": "FAQ",
+            "href": "/about/faq"
+        }
     ],
     "copyright": "Copyright © Inman Park Festival"
 }

@@ -1,0 +1,20 @@
+extends ../../templates/layout.jade
+
+block title
+    title #{ipf.title} | Market | Become an Exhibitor
+
+block contents
+
+    .u-container
+    
+        h1 Become an Exhibitor 
+        
+        p To apply to become a vendor for the #{ipf.date.year} #{ipf.title}, fill out the initial vendor application and return it to the address specified in the application PDF.
+
+        p 
+            a(href="/assets/files/Vendor-Application-2016.pdf") Click here to download the Vendor Application PDF.
+
+        p 
+            | If you need the Adobe Acrobat Reader to view this PDF file, you can 
+            = ' '
+            a(href="https://get.adobe.com/reader" target="_blank") download it for free here.

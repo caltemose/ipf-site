@@ -3,6 +3,10 @@
         "src": "src/assets/img/**",
         "dest": "build/assets/img"
     },
+    "files": {
+        "src": "src/assets/files/**",
+        "dest": "build/assets/files"
+    },
     "css": {
         "src": "src/assets/css/main.scss",
         "dest": "build/assets/css"

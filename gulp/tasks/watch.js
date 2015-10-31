@@ -6,11 +6,15 @@
 var browserSync = require('browser-sync'),
     reload = browserSync.reload;
 
-gulp.task('watch', ['watch:images', 'watch:css', 'watch:js', 'watch:templates']);
+gulp.task('watch', ['watch:images', 'watch:files', 'watch:css', 'watch:js', 'watch:templates']);
 
 gulp.task('watch:images', function () {
     gulp.watch(config.watch.images, ['images']);
-})
+});
+
+gulp.task('watch:files', function () {
+    gulp.watch(config.watch.images, ['images']);
+});
 
 gulp.task('watch:css', function () {
     gulp.watch(config.watch.css, ['css']);

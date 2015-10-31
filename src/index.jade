@@ -8,26 +8,26 @@ block title
 
 block contents
 
-    .container
+    .u-container
 
-        h1 Home Page
+        h1 Welcome to Atlanta's Best Street Festival
 
         article
 
-            h2 Inman Park Festival 
+            h2 Inman Park Festival #{ipf.date.year}
+            
+            section.Hero
+            
+                p Tour of Homes Preview: Friday, #{ipf.date.friday.date} (#{ipf.date.friday.hours})
 
-            p Tour of Homes Preview: Friday, April #{ipf.date.friday} (noon-4pm)
+                p Festival: Saturday #{ipf.date.saturday.date} and Sunday #{ipf.date.sunday.date}, #{ipf.date.year} (#{ipf.date.saturday.hours})
 
-            p Festival: Saturday and Sunday, April #{ipf.date.saturday} and #{ipf.date.sunday}, #{ipf.date.year} (noon-6pm)
+                
 
-            p Map | Directions | Parking | FAQ
-
-
-            h3 Welcome to Atlanta's Best Street Festival
 
             p During the last full weekend in April each year, Inman Park proudly presents a neighborhood festival widely regarded as Atlanta&rsquo;s most spirited and eclectic.
 
-            p Please join us for the #{ipf.date.annual}th Inman Park Spring Festival and Tour Of Homes. The House Tour Preview will be Friday, April #{ipf.date.friday} (Noon - 4pm), and Festival on April #{ipf.date.saturday} and #{ipf.date.sunday}, #{ipf.date.saturday} and #{ipf.date.year} (Noon - 6pm).
+            p Please join us for the #{ipf.date.annual}th Inman Park Spring Festival and Tour Of Homes.
 
 
             h3 Primary Site Sections
@@ -55,9 +55,4 @@ block contents
                 li YouTube
                 li Instagram
 
-            h3 Footer
-
-            ul
-                li sponsor logos
-                li copyright
-                li contact/terms/privacy
+                
