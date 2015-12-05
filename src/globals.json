@@ -19,6 +19,7 @@
         }
     },
     "tour": {
+        "active": false,
         "cost": {
             "advance": "15",
             "door": "20"
@@ -37,6 +38,9 @@
         }, {
             "title": "Events",
             "href": "/events"
+        }, {
+            "title": "Food",
+            "href": "/food"
         }, {
             "title": "Sponsors",
             "href": "/sponsors"
@@ -60,5 +64,29 @@
             "href": "/about/faq"
         }
     ],
-    "copyright": "Copyright © Inman Park Festival"
+    "copyright": "Copyright © Inman Park Festival",
+    "vendors": {
+        "deadline": "March 11, 2016",
+        "notification": "April 6, 2016"
+    },
+    "events": {
+        "nav": [
+            {
+                "title": "Tour of Homes",
+                "href": "/events/tour-of-homes"
+            }, {
+                "title": "Parade",
+                "href": "/events/parade"
+            }, {
+                "title": "Music",
+                "href": "/events/music"
+            }, {
+                "title": "Dance",
+                "href": "/events/dance"
+            }, {
+                "title": "Kidzone",
+                "href": "/events/kidzone"
+            }
+        ]
+    }
 }
