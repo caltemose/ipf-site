@@ -8,21 +8,26 @@ block contents
     .u-container
     
         h1 Inman Park Festival Parade
+        
+        mixin tertiaryNav(events.nav, "parade")
     
     .Hero
         p Parade photos go here
     
     .u-container
     
-        p Come see our Butterfly, Trash Monarch, Precision Attache Case Drill Team, and Seed & Feed Marching Abominables take to the street in the city’s funkiest and most eclectic spring parade. This favorite of Festival begins at Edgewood and Euclid on Saturday April 25 at 2:00 p.m. (rain or shine) and runs to Austin Ave. at the foot of Little Five Points.
+        p Come see our Butterfly, Trash Monarch, Precision Attache Case Drill Team, and <a href="http://seedandfeed.org/" target="_blank">Seed & Feed Marching Abominables</a> take to the street in the city’s funkiest and most eclectic spring parade. This favorite of Festival begins at Edgewood and Euclid on Saturday #{ipf.date.saturday.date} at #{events.parade.time} (rain or shine) and runs to Austin Ave. at the foot of Little Five Points.
 
-        p The AJC considers the parade one of 10 Things Every Atlanta Resident Should Do:
+        p 
+            | The AJC considers the parade one of 
+            = ' '
+            a(href="http://www.accessatlanta.com/news/events/10-things-every-atlanta-resident-should-do/njyjQ/" target="_blank") 10 Things Every Atlanta Resident Should Do:
 
         blockquote Take in a parade with personality. (Intown Atlanta) Inman Park Spring Festival’s parade is a people watching paradise. Colorful costumes, creative themes, and the Seed & Feed Marching Abominable invite spring with sass and funk.
 
         p 
             a(href="#") Download the Parade Application
             = ' '
-            | if you’d like to register.
+            | if you’d like to register to march in the parade.
 
     

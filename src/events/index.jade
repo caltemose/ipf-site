@@ -12,12 +12,7 @@ block contents
     
         h1 Festival Events
         
-        nav.NavTertiary
-            each item in events.nav
-                if item.title.toLowerCase() === selectedNav
-                    a(href=item.href class="PipeNav PipeNav.is-selected")= item.title
-                else
-                    a(href=item.href class="PipeNav")= item.title
+        mixin tertiaryNav(events.nav)
         
     .Hero
         p This hero could contain images of any of the events and event areas for festival.

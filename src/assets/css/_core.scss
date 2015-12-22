@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     font-size: $font-size;
-    background: #fafafa;
+    background: #fff;
 }
 
 main {
@@ -49,5 +49,21 @@ a {
 
     &:hover {
         text-decoration: underline;
+    }
+}
+
+blockquote {
+    margin: 1.5em 2em;
+    font-style: italic;
+    font-size: 1.25em;
+
+    &:before {
+        content: "\201C";
+        display: inline-block;
+        margin-left: -0.5em;
+        margin-right: 0.1em;
+    }
+    &:after {
+        content: "\201D";
     }
 }

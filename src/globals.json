@@ -62,6 +62,9 @@
         }, {
             "title": "FAQ",
             "href": "/about/faq"
+        }, {
+            "title": "Lost & Found",
+            "href": "/lost-and-found"
         }
     ],
     "copyright": "Copyright © Inman Park Festival",
@@ -87,6 +90,9 @@
                 "title": "Kidzone",
                 "href": "/events/kidzone"
             }
-        ]
+        ],
+        "parade": {
+            "time": "2:00 PM"
+        }
     }
 }

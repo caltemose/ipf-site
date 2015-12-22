@@ -1,0 +1,7 @@
+mixin tertiaryNav(nav, selected)
+    nav.NavTertiary
+        each item in nav
+            if item.title.toLowerCase() === selected
+                a(href=item.href class="PipeNav .is-selected")= item.title
+            else
+                a(href=item.href class="PipeNav")= item.title
