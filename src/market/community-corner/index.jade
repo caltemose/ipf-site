@@ -1,7 +1,7 @@
 extends ../../templates/layout.jade
 
 block title
-    title #{ipf.title} | Community Corner
+    title #{globals.ipf.title} | Community Corner
 
 block contents
 
@@ -9,7 +9,7 @@ block contents
     
         h1 Community Corner
         
-        mixin tertiaryNav(markets.nav, "community corner")
+        mixin tertiaryNav(globals.markets.nav, "community corner")
         
         p Non-profit organization may request a space in the Community Corner which is separate from the main vendor area. Appropriate applicants (registered non-profit) are accepted based on availability on first come, first serve basis.
 

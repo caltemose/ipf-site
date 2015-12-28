@@ -1,7 +1,7 @@
 extends ../../templates/layout.jade
 
 block title
-    title #{ipf.title} | Events | Music
+    title #{globals.ipf.title} | Events | Music
 
 block contents
 
@@ -9,7 +9,7 @@ block contents
     
         h1 Music at Inman Park Festival
         
-        mixin tertiaryNav(events.nav, "music")
+        mixin tertiaryNav(globals.events.nav, "music")
     
     .Hero
         p Band promos go here
@@ -17,3 +17,8 @@ block contents
     .u-container
     
         p Need to figure out how this section will be organized and what band content we will host beyond the schedule.
+
+    
+    script.
+        var ipf = {};
+        ipf.page = 'music';

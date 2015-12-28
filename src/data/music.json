@@ -1,0 +1,29 @@
+{
+    "bands": [
+        {
+            "date": "2015-04-20",
+            "start": 1145,
+            "end": 1245,
+            "stage": "d",
+            "title": "Book of Colors",
+            "photo": "",
+            "description": "Psychedelic and soulful multi-instrumentalists"
+        }, {
+            "date": "2015-04-20",
+            "start": 1300,
+            "end": 1400,
+            "stage": "d",
+            "title": "Mr. Blue Sky",
+            "photo": "",
+            "description": "Indie pop trio"
+        }, {
+            "date": "2015-04-20",
+            "start": 1500,
+            "end": 1600,
+            "stage": "d",
+            "title": "Myles Brown Band",
+            "photo": "",
+            "description": "Funk-rock"
+        }
+    ]
+}

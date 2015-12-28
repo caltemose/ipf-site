@@ -1,7 +1,7 @@
 extends ../../templates/layout.jade
 
 block title
-    title #{ipf.title} | Events | Dane
+    title #{globals.ipf.title} | Events | Dane
 
 block contents
 
@@ -9,7 +9,7 @@ block contents
     
         h1 Inman Park Dance Festival
         
-        mixin tertiaryNav(events.nav, "dance")
+        mixin tertiaryNav(globals.events.nav, "dance")
     
     .Hero
         p Dance photos go here
@@ -25,6 +25,6 @@ block contents
         p So, take a seat after the Parade or visiting every booth on Edgewood, be entertained and be impressed by the work of these accomplished and varied artists.
         
         p 
-            | The dance festival takes place on: Saturday, #{ipf.date.saturday.date} and Sunday, #{ipf.date.sunday.date}, #{ipf.date.year} at 4:00 pm and is located at the Trolley Barn at 963 Edgewood Ave NE. 
+            | The dance festival takes place on: Saturday, #{globals.ipf.date.saturday.date} and Sunday, #{globals.ipf.date.sunday.date}, #{globals.ipf.date.year} at 4:00 pm and is located at the Trolley Barn at 963 Edgewood Ave NE. 
             = ' '
             a(href="https://www.google.com/maps/place/THE+TROLLEY+BARN/@33.756329,-84.356141,17z/data=!3m1!4b1!4m2!3m1!1s0x88f503ff905e1bed:0xc1626dc0cd684569") [map]

@@ -20,6 +20,10 @@
         "src": "src/assets/js/**/*",
         "dest": "build/assets/js"
     },
+    "data": {
+        "src": "src/data/**/*.json",
+        "dest": "build/data"
+    },
     "watch": {
         "images": "src/assets/img/**",
         "css": "src/assets/css/**/*.scss",

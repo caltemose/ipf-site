@@ -19,14 +19,14 @@ html(lang="en")
         header
             .u-container
                 nav.NavPrimary
-                    each item in nav
+                    each item in globals.nav
                         if item.title.toLowerCase() === selectedNav
                             a(href=item.href class="PipeNav PipeNav.is-selected")= item.title
                         else
                             a(href=item.href class="PipeNav")= item.title
                 
                 nav.NavSecondary
-                    each item in utilities
+                    each item in globals.utilities
                         if item.title.toLowerCase() === selectedNav
                             a(href=item.href class="PipeNav PipeNav.is-selected")= item.title
                         else
@@ -54,4 +54,6 @@ html(lang="en")
                     a(href="/privacy-policy" class="PipeNav") Privacy Policy
                     a(href="/trademark" class="PipeNav") Trademark Use
                 
-                p.fineprint #{copyright}
+                p.fineprint #{globals.copyright}
+
+        script(src="/assets/js/ipf.js")

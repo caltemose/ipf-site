@@ -4,7 +4,7 @@ block pageVars
     - var selectedNav = 'events'
 
 block title
-    title #{ipf.title} | Events
+    title #{globals.ipf.title} | Events
 
 block contents
 
@@ -12,7 +12,7 @@ block contents
     
         h1 Festival Events
         
-        mixin tertiaryNav(events.nav)
+        mixin tertiaryNav(globals.events.nav)
         
     .Hero
         p This hero could contain images of any of the events and event areas for festival.

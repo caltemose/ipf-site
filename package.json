@@ -10,6 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.9.3",
+    "browserify": "^12.0.1",
+    "component-ajax": "forbeslindesay/ajax",
     "del": "~0.1.3",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.2",
@@ -22,7 +24,14 @@
     "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "^3.0.6",
+    "lodash": "^3.10.1",
     "marked": "~0.3.2",
-    "require-dir": "^0.3.0"
+    "require-dir": "^0.3.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.6.1"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4"
   }
 }

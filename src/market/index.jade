@@ -4,7 +4,7 @@ block pageVars
     - var selectedNav = 'market'
 
 block title
-    title #{ipf.title} | Market
+    title #{globals.ipf.title} | Market
 
 block contents
 
@@ -12,7 +12,7 @@ block contents
 
         h1 Arts & Crafts Show and Street Vendors
         
-        mixin tertiaryNav(markets.nav)
+        mixin tertiaryNav(globals.markets.nav)
         
         p If you're looking for gifts, new clothes, art for your house or just about anything else, you are likely to find what your looking for at one of the many vendor booths lining the tree-shaded streets during the Inman Park Festival.
         
@@ -41,6 +41,6 @@ block contents
         h2 Become a Vendor
         
         p 
-            | If you are interested in being a vendor for the #{ipf.date.year} festival, 
+            | If you are interested in being a vendor for the #{globals.ipf.date.year} festival, 
             = ' '
             a(href="/market/become-an-exhibitor") visit the Become an Exhibitor page for more info.

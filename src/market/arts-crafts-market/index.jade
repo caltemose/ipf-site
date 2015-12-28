@@ -1,7 +1,7 @@
 extends ../../templates/layout.jade
 
 block title
-    title #{ipf.title} | Arts & Crafts Market
+    title #{globals.ipf.title} | Arts & Crafts Market
 
 block contents
 
@@ -9,7 +9,7 @@ block contents
     
         h1 Arts & Crafts Market
         
-        mixin tertiaryNav(markets.nav, "arts & crafts")
+        mixin tertiaryNav(globals.markets.nav, "arts & crafts")
         
         p Our juried Arts and Crafts Show includes more than 150 fine artists working in sculpture, paintings, and photography.
 

@@ -4,7 +4,7 @@ block pageVars
     - var selectedNav = 'about'
 
 block title
-    title About the #{ipf.title}
+    title About the #{globals.ipf.title}
 
 block contents
 
@@ -24,16 +24,16 @@ block contents
             h3 Festival hours are:
 
             ul
-                li Friday, #{ipf.date.friday.date}: #{ipf.date.friday.hours} (Tour of Homes preview only)
-                li Saturday, #{ipf.date.saturday.date}: #{ipf.date.saturday.hours}
-                li Sunday, #{ipf.date.sunday.date}: #{ipf.date.sunday.hours}
+                li Friday, #{globals.ipf.date.friday.date}: #{globals.ipf.date.friday.hours} (Tour of Homes preview only)
+                li Saturday, #{globals.ipf.date.saturday.date}: #{globals.ipf.date.saturday.hours}
+                li Sunday, #{globals.ipf.date.sunday.date}: #{globals.ipf.date.sunday.hours}
                 
             p Note that on Friday, no other festival activities will happen other than the Tour preview. 
 
                 
             h3 Admission
             
-            p Admission to all Festival events, except the Tour of Homes, is free. Tour of Homes tickets are $#{tour.cost.advance} in advance and $#{tour.cost.door} starting Friday, #{ipf.date.friday.date}.
+            p Admission to all Festival events, except the Tour of Homes, is free. Tour of Homes tickets are $#{globals.tour.cost.advance} in advance and $#{globals.tour.cost.door} starting Friday, #{globals.ipf.date.friday.date}.
 
             
             h3 Arrival
@@ -47,7 +47,7 @@ block contents
             
             p The Tour of Homes is a self-conducted tour of some of the beautiful homes and buildings in Inman Park. See inside some of the glorious old Victorian homes or check out some of the beautiful remodeling jobs neighbors have completed on their houses.
             
-            p The home preview starts on Friday #{ipf.date.friday.date} between #{ipf.date.friday.hours} and continues through Saturday and Sunday between #{ipf.date.saturday.hours}.
+            p The home preview starts on Friday #{globals.ipf.date.friday.date} between #{globals.ipf.date.friday.hours} and continues through Saturday and Sunday between #{globals.ipf.date.saturday.hours}.
             
             p 
                 | To find out more about the Tour of Homes and read about the homes on the tour, visit the

@@ -1,7 +1,7 @@
 extends ../../templates/layout.jade
 
 block title
-    title #{ipf.title} | Events | Tour of Homes
+    title #{globals.ipf.title} | Events | Tour of Homes
 
 block contents
 
@@ -9,11 +9,11 @@ block contents
     
         h1 Tour of Homes
         
-        mixin tertiaryNav(events.nav, "tour of homes")
+        mixin tertiaryNav(globals.events.nav, "tour of homes")
         
         p The Tour of Homes is a self-conducted tour of some of the beautiful homes and buildings in Inman Park. See inside some of the glorious old Victorian homes or check out some of the beautiful remodeling jobs neighbors have completed on their houses.
         
-        p The home preview starts on Friday #{ipf.date.friday.date} between #{ipf.date.friday.hours} and continues through Saturday and Sunday between #{ipf.date.saturday.hours}.
+        p The home preview starts on Friday #{globals.ipf.date.friday.date} between #{globals.ipf.date.friday.hours} and continues through Saturday and Sunday between #{globals.ipf.date.saturday.hours}.
         
         h2 Important Details
         
@@ -23,7 +23,7 @@ block contents
             li Tour tickets are valid the entire weekend of festival but each house can only be visited once per ticket.
             li Discounted Home tour tickets ($5.00 off) are available until noon on the Friday Festival starts.
         
-        if tour.active
+        if globals.tour.active
             h2 This Year's Homes
         else
             h2 Last Year's Homes    

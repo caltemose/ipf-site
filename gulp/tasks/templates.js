@@ -13,7 +13,10 @@ gulp.task('templates', function () {
     return gulp.src(config.html.src)
         .pipe(jade({
             pretty: true,
-            data: JSON.parse(fs.readFileSync('./src/globals.json', {encoding: 'utf8'}))
+            data: {
+                globals: JSON.parse(fs.readFileSync('./src/data/globals.json', {encoding: 'utf8'})),
+                music: JSON.parse(fs.readFileSync('./src/data/music.json', {encoding: 'utf8'}))
+            }
         }))
         .on('error', gutil.log)
         .pipe(prettify({indent_size:4}))
