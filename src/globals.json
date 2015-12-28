@@ -94,5 +94,22 @@
         "parade": {
             "time": "2:00 PM"
         }
+    },
+    "markets": {
+        "nav": [
+            {
+                "title": "Arts & Crafts",
+                "href": "/market/arts-crafts-market"
+            }, {
+                "title": "Street Market",
+                "href": "/market/street-market"
+            }, {
+                "title": "Community Corner",
+                "href": "/market/community-corner"
+            }, {
+                "title": "Become an Exhibitor",
+                "href": "/market/become-an-exhibitor"
+            }
+        ]
     }
 }

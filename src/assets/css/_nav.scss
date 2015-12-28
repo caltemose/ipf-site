@@ -10,6 +10,10 @@
     &:last-child {
         border-right: none;
     }
+
+    &.is-selected {
+        text-decoration: underline;
+    }
 }
 
 .NavTertiary {
