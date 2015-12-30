@@ -23,3 +23,10 @@ gulp.task('templates', function () {
         .pipe(gulp.dest(config.html.dest))
         .pipe(browserSync.reload({stream: true}));
 });
+
+// function cleanMusic (data) {
+//     for(var i=0; i<data.bands.length; i++) {
+//         data.bands[i].modified = 'true';
+//     }
+//     return data;
+// }

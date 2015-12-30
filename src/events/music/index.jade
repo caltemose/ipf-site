@@ -7,17 +7,21 @@ block contents
 
     .u-container
     
-        h1 Music at Inman Park Festival
+        h1 Live Music at the Inman Park Festival
         
         mixin tertiaryNav(globals.events.nav, "music")
     
     .Hero
-        p Band promos go here
-    
-    .u-container
-    
-        p Need to figure out how this section will be organized and what band content we will host beyond the schedule.
+        p Band/Stage promos
+        
+    ul.MusicDates
+        
+        //- Saturday bands by stage
+        mixin musicday("Saturday", music.stages, music.saturday)
 
+        //- Sunday bands by stage
+        mixin musicday("Sunday", music.stages, music.sunday)
+        
     
     script.
         var ipf = {};
